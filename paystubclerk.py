@@ -27,7 +27,7 @@ class PaystubClerk:
         self.load_image()
 
     def load_image(self):
-        image_path = resource_path("image.png")  # 설명할 이미지 경로를 입력
+        image_path = resource_path("manual.png")  # 설명할 이미지 경로를 입력
         image = Image.open(image_path)
         image = image.resize((396, 549))  # 이미지 크기 조정
         self.photo = ImageTk.PhotoImage(image)
